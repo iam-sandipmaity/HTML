@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lable</title>
+</head>
+
+<body>
+    <div>
+        <!--Without level -->
+        <!-- for the Don't use of level tag if we click in the text of the any option then it doesn't clickable but if we click in the round circle then it will selected -->
+
+        <form action="/action.php">
+            <input type="radio" value="class XI" name="class">class XI
+            <input type="radio" value="class XII" name="class">class XII
+        </form>
+        <br>
+        <hr>
+        <!--With level -->
+        <!-- for the level tag if we click in the text of the any option then also it clickable -->
+        <form action="/action.php">
+            <label for="id1">
+                <input type="radio" valur="class XI" name="class" id="id1">class XI
+            </label>
+            <label for="id2">
+                <input type="radio" valur="class XII" name="class" id="id2">class XII
+            </label>
+        </form>
+    </div>
+    <input type="submit"  value="submit">
+</body>
+
+</html>

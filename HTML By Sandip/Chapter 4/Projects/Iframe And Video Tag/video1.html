@@ -1,0 +1,38 @@
+
+<h1><b>Multiple sources</b></h1>
+<br><!-- This example builds on the last one, offering three different sources for the media; this allows the video to be watched regardless of which video codecs are supported by the browser -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Using multiple sources as fallbacks for a video tag -->
+    <!-- 'Elephants Dream' by Orange Open Movie Project Studio, licensed under CC-3.0, hosted by archive.org -->
+    <!-- Poster hosted by Wikimedia -->
+    <video width="620" controls
+        poster="https://upload.wikimedia.org/wikipedia/commons/e/e8/Elephants_Dream_s5_both.jpg">
+        <source src="https://archive.org/download/ElephantsDream/ed_hd.ogv" type="video/ogg" />
+        <source src="https://archive.org/download/ElephantsDream/ed_hd.avi" type="video/avi" />
+        <source src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4" type="video/mp4" />
+
+        Sorry, your browser doesn't support embedded videos, but don't worry, you can
+        <a href="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4">
+            download the MP4
+        </a>
+        and watch it with your favorite video player!
+    </video>
+</body>
+
+</html>
+
+
+<!-- First Ogg is tried. If that can't be played, then AVI is tried. Finally, MP4 is tried. A fallback message is displayed if the video element isn't supported, but not if all sources fail. -->
+
+<!-- Some media file types let you provide more specific information using the codecs parameter as part of the file's type string. A relatively simple example is video/webm; codecs="vp8, vorbis", which says that the file is a WebM video using VP8 for its video and Vorbis for audio. -->

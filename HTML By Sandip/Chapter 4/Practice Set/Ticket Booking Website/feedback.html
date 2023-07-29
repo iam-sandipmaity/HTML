@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+
+<body>
+    <nav>
+        <img src="" alt="logo" height="12">
+        <br><br><br>
+        <ul>
+            <li><a href="/index.html" target="_blank">Home</a></li>
+            <li><a href="/login.html" target="_blank">Login</a></li>
+            <li><a href="/bookmyticket.html" target="_blank">Book My Ticket</a></li>
+            <li><a href="/service.html" target="_blank">Services</a></li>
+            <li><a href="/feedback.html" target="_blank">Feedback</a></li>
+            <li><a href="/about.html" target="_blank">About Us</a></li>
+            <li><a href="/faq.html" target="_blank">FAQ</a></li>
+            <li><a href="/contact.html" target="_blank">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1><b>Feedback</b></h1>
+    </header>
+    <main>
+        <div>
+            <form action="/action.php">
+                <h4><b>Enter Your Name</b></h4>
+                <input type="text" placeholder="Enter Your Name">
+                <br>
+                <!-- <input type="button" value="Submit"> -->
+                <br>
+                <h4><b>Enter Your User Name</b></h4>
+                <input type="text" placeholder="Enter your user name">
+                <br>
+                <h4><b>Enter Your Password </b></h4>
+                
+                <input type="password" placeholder="Enter your password">
+                <br>
+                <h4><b>Enter Your Email Id</b></h4>
+                <input type="email" placeholder="Enter your Email Id">
+                <br>
+                <h4><b>Enter Your Mobile Number</b></h4>
+                <input type="number" placeholder="Enter Your Mobile Number">
+        </div>
+        <div>
+            <!-- get rate from the user  -->
+            <h4><b>How You rate our Services</b></h4> <br>
+            <label for="id1">
+                <input type="radio" value="*" name="service" id="id1">*
+            </label>
+            <br>
+            <label for="id2">
+                <input type="radio" value="**" name="service" id="id2">**
+            </label>
+            <br>
+            <label for="id3">
+                <input type="radio" value="***" name="service" id="id3">***
+            </label>
+            <br>
+            <label for="id4">
+                <input type="radio" value="****" name="service" id="id4">****
+            </label>
+            <br>
+            <label for="id5">
+                <input type="radio" value="*****" name="service" id="id5">*****
+            </label>
+            <br>
+        </div>
+        <div>
+            <h4><b>How Much easy to use Our services</b></h4> <br>
+            <label for="id6">
+                <input type="radio" value="*" name="service1" id="id6">*
+            </label>
+            <br>
+            <label for="id7">
+                <input type="radio" value="**" name="service1" id="id7">**
+            </label>
+            <br>
+            <label for="id8">
+                <input type="radio" value="***" name="service1" id="id8">***
+            </label>
+            <br>
+            <label for="id9">
+                <input type="radio" value="****" name="service1" id="id9">****
+            </label>
+            <br>
+            <label for="id10">
+                <input type="radio" value="*****" name="service1" id="id10">*****
+            </label>
+            <br>
+        </div>
+        <!-- drop box question -->
+        <div>
+            <h4><b> Are You Ever Buy Your Ticket fromBook My Ticket?</b></h4>
+            <select name="Ticket" id="Ticket">
+                <option value="">Select An Option</option>
+                <option value="Yes">Yes🫡</option>
+                <option value="No">No😒</option>
+            </select>
+            <h4><b> Are You Satisfied With Us?</b></h4>
+            <select name="Satisfied" id="Satisfied">
+                <option value="">Select An Option</option>
+                <option value="Yes">Yes🫡</option>
+                <option value="No">No😒</option>
+            </select>
+            <h4><b> Will You Recomended Our Services To Your Friend?</b></h4>
+            <select name="Recomended" id="Recomended">
+                <option value="">Select An Option</option>
+                <option value="Yes">Yes🫡</option>
+                <option value="No">No😒</option>
+            </select>
+            <h4><b> Are You Feel safe to use our website?</b></h4>
+            <select name="safe" id="safe">
+                <option value="">Select An Option</option>
+                <option value="Yes">Yes🫡</option>
+                <option value="No">No😒</option>
+                <option value="Not Sure">Not Sure😐</option>
+            </select>
+        </div>
+        <!-- checkbox question -->
+        <div>
+            <h4><b>Which Things Are You like when you use our website?</b></h4>
+            <label for="id11"><input type="checkbox" value="Convinient" name="like" id="id11">Convinient</label> <br>
+            <label for="id12"><input type="checkbox" value="Easy to use" name="like" id="id12">Easy to use</label> <br>
+            <label for="id13"><input type="checkbox" value="safe for transaction" name="like" id="id13">safe for transaction</label> <br>
+            <label for="id14"><input type="checkbox" value="Customer Support 24 X 7" name="like" id="id14">Customer Support 24 X 7</label> <br>
+            <label for="id15"><input type="checkbox" value="affordable" name="like" id="id15">affordable</label> <br>
+        </div>
+        <!-- textarea for taking some valuable feedback from the user  -->
+        <div>
+            <textarea name="Feedback" id="Feedback" cols="30" rows="10" placeholder="Enter Your Valuable Feedback"></textarea>
+        </div>
+        <br><br>
+        <input type="submit" value="submit">
+        </form>
+        </div>
+    </main>
+    <footer>
+        <a href="/feedback.html#">🔝</a>
+    </footer>
+</body>
+
+</html>
